@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Welcome|Bienvenido</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="script.js"></script>
+</head>
+<body>
+      
+      <section id="inicio" >
+        
+           <header class="fondo1" style="position: static;" >
+          
+            <img class="logo" src="logo.png" style="margin-left: 5px;">
+            <button class="w3-button w3-red " style="border-radius: 15px; position: relative; float: right; margin-top: 20px; margin-right: 30px;">
+            <a href="https://www.instagram.com/">Login</a></button>
+         </header>  
+          <div class="w3-display-container">
+             <div class="w3-container w3-margin-left w3-theme-d5 (w3-theme-dark)"><br>
+            
+               
+                <div id="menu" class="w3-container w3-xxlarge w3-padding-64">
+                <img src="bakery-1868396.jpg" class="w3-round" alt="Norway"> 
+                <div class="w3-padding w3-display-bottommiddle w3-button w3-round-xxlarge w3-tiny w3-padding-large w3-white" >Resevación</div>
+                
+             </div>
+            </div> 
+        </div>
+        
+        <div class="fotos">
+            <img src="coffee-4908764_1920.jpg" class="foto1" >
+            <img src="pizza-2589575_1920.jpg" class="foto2" >
+            </div>
+         <div class="fotoslinea2">
+          <img src="sandwich-2977251_1920.jpg" class="foto3">
+          <img src="bread-101636.jpg" class="foto4">
+        </div>
+
+          <div class="varsa">
+             <div class="w3-container"> 
+              <div class="w3-row w3-gray">
+                <a href="javascript:void(0)" onclick="openCity(event, 'Misión');">
+                  <div class="w3-third tablink w3-bottombar w3-hover-light-red w3-padding">Misión</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'Visión');">
+                  <div class="w3-third tablink w3-bottombar w3-hover-light-red w3-padding">Visión</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openCity(event, 'Valores');">
+                  <div class="w3-third tablink w3-bottombar w3-hover-light-red w3-padding">Valores</div>
+                </a>
+              </div>
+            
+              <div id="Misión" class="w3-container city" style="display:none; color: antiquewhite;">
+                <h2>Misión</h2>
+                <p style="text-align: justify; color: antiquewhite;">Satisfacer las necesidades gastronómicas de nuestros clientes, ofreciendo
+                  alimentos y servicios con la más alta calidad, donde se sobrepasen las
+                  expectativas de nuestros clientes y ser un espacio de trabajo que permita la
+                  realización personal y el Desarrollo de sus colaboradores en el grupo.</p>
+              </div>
+            
+              <div id="Visión" class="w3-container city" style="display:none; color: antiquewhite;">
+                <h2>Visión</h2>
+                <p style="text-align: justify;color: antiquewhite;">Nuestra visión a futuro es ayudar a crear una localidad más saludable,
+                  más consciente sobre su nutrición, y que nuestra ciudad tenga una opción
+                  confiable y de bajo costo para comer bien, sin sacrificar el placer de comer.</p> 
+              </div>
+            
+              <div id="Valores" class="w3-container city" style="display:none;color: antiquewhite;">
+                <h2>Valores</h2>
+                <p style="color: antiquewhite;">Honestidad, confianza, firmeza, responsabilidad y liderazgo.</p>
+              </div>
+           
+             </div>
+
+    </div>
+            </div>
+             
+        <div class="root">
+                <div class="calendar" id="calendar">
+          
+        </div>
+        <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+        <script  type="text/javascript" src="./js/calendar.js"></script>
+        <script type="text/javascript">
+        let calendar = new Calendar('calendar');
+        calendar.getElement().addEventListener('change', e => {
+      console.log(calendar.value().format('LLL'));
+         });
+        </script>
+          </div>
+        </div>
+        <div class="w3-container w3-blue-grey w3-grayscale-min w3-xlarge w3-padding-top-32">
+
+          <h1 class="w3-center w3-jumbo">Contact</h1>
+          
+          <p>Llamanós al 7660-9721</p>
+          <p>Ofrecemos servicio completo de catering para cualquier evento, grande o pequeño. Entendemos sus necesidades y atenderemos la comida para satisfacer los criterios más importantes de todos, tanto en apariencia como en sabor.
+          </p>
+          
+          <p class="w3-xxlarge"><b>Reserve</b> una mesa, pregunte por el especial de hoy o simplemente envíenos un mensaje:</p>
+          
+          <form action="/action_page.php" target="_blank">
+          
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+          
+          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Cuantas personas" required name="People"></p>
+          
+          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Fecha y hora" required name="date" value="2020-11-16T20:00"></p>
+          
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje \ Requisitos especiales" required name="Message"></p>
+          
+          <p><button class="w3-button w3-light-grey w3-block" type="submit">Enviar Mensaje</button></p>
+          
+          </form>
+          
+          <p class="w3-center w3-xlarge w3-padding-32">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank">Food4U</a></p>
+          
+          </div>
+       </section>
+       
+
+      <aside id="ladito">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+        <div class="container">
+            <div id="carouselExample" class="carousel vert slide" data-ride="carousel" data-interval="1000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div id="carouselExample" class="carousel vert slide" data-ride="carousel" data-interval="1000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block mx-auto img-fluid" src="medalla2.png" alt="Primera slide">
+                            <p>Manhathan 1999- The best gourmet Burger, first place</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto img-fluid" src="medalla2.png" alt="Segunda slide">
+                        <p>Stn Lucia 2001- Th royal preference, second place</p>
+                          </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto img-fluid" src="medalla2.png" alt="Tercera slide">
+                        <p>Bogota, Colombia 2001- La Delicia de Bogota, primer lugar.</p>
+                          </div>
+                        <div class="carousel-item">
+                          <img class="d-block mx-auto img-fluid" src="medalla2.png" alt="Cuarta slide">
+                      <p>Madrid, España 2004- La mejor hamburguesa gourmet</p>
+                        </div>
+                      <div class="carousel-item">
+                          <img class="d-block mx-auto img-fluid" src="medalla2.png" alt="Quinta slide">
+                          <p>Buenos Aires- Argentina 2006 – Champio of all tasted</p>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block mx-auto img-fluid" src="medalla2.png" alt="Sexta slide">
+                        <p>New york, Estados Unidos 2010- The royal Hamburguer</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block mx-auto img-fluid" src="medalla2.png" alt="Septima slide">
+                        <p>Texas, Estados Unidos 2016- Favorite flavore</p>
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon  rounded-circle" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon  rounded-circle" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+
+           
+    </div>  
+      
+      </aside>
+        
+
+    </body>
+</html>

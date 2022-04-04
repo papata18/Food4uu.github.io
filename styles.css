@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+padding: 0;
+font-family: lato;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+.fondo1{
+    background-color: #67843a;
+    
+}
+.logo{
+    width: 85px;
+    height: 85px;
+    margin-left: 100px;
+
+}
+
+
+@font-face {
+    font-family: NamumGothic-Bold ;
+    src: url(font/NanumGothic-Bold.ttf) format(truetype);
+}
+.login{
+    
+    border-radius: 5px;
+    background-color: orange;
+    font-family: NamumGothic-Bold;
+    text-align:unset;
+
+}
+#inicio{
+    width: 76%;
+    height: 3246px;
+    float: left;
+    background-color: #525140;
+}
+#ladito{
+    width: 24%;
+    height: 3246px;
+    background-color: #92b558;
+    float: left;
+}
+#menu{
+    background: url(lolito.jpg) no-repeat;
+}
+.mySlides{
+    width: 256px ;
+    height: 384px;
+}
+.w3-round{
+    width: 508px;
+    height: 335px;
+    margin-left: 250px;
+}
+.reservacione{
+    margin-left: 10px;
+}
+.foto1{
+    width: 256px ;
+    height: 384px;
+    margin-top: 80px;
+    margin-left: 180px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.foto1:hover{
+    transform: scale(1.1);
+}
+.foto2{
+    width: 256px ;
+    height: 384px;
+    margin-top: 80px;
+    margin-left: 180px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.foto2:hover{
+    transform: scale(1.1);
+}
+.foto3{
+    width: 256px ;
+    height: 384px;
+    margin-top: 60px;
+    margin-left: 180px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.foto3:hover{
+    transform: scale(1.1);
+}
+.foto4{
+    width: 256px ;
+    height: 384px;
+    margin-top: 60px;
+    margin-left: 180px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.foto4:hover{
+    transform: scale(1.1);
+}
+.varsa{
+    margin-top: 90px;
+    margin-right: 80px;
+    margin-left: 40px;
+}
+:root {
+    --color-bg-calendar: #3f4c5e;
+    --color-cell: #e3e3e3;
+    --color-cell-disabled: #4e81a8;
+}
+
+.root {
+    min-height: 100vh;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0%;
+    margin-top: 0px;
+}
+
+.calendar {
+    margin-left: 200px;
+    padding: 20px 10px;
+    background-color: var(--color-bg-calendar);
+    border-radius: 3px;
+    width: 100%;
+    max-width: 300px;
+    font-family: sans-serif;
+    margin-left: 0px;
+}
+
+.calendar__header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.calendar .control {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.grid__header, .grid__body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid__header {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.grid__body {
+    grid-auto-rows: 40px;
+    color: var(--color-cell);
+}
+
+.grid__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__cell--gd {
+    cursor: pointer;
+}
+
+.grid__cell--selected {
+    color: var(--color-bg-calendar);
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--color-bg-calendar) inset;
+}
+
+.grid__cell--disabled {
+    color: var(--color-cell-disabled);
+    cursor: not-allowed;
+}
+
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+.carousel-item{
+    margin-top: 300px;
+}
